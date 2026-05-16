@@ -82,6 +82,22 @@ cd frontend
 npm run android
 ```
 
+#### 📱 Testing on Physical Device
+You can test the app on your mobile device using either Wi-Fi (Expo Go) or a USB Cable.
+
+**Option A: Via Wi-Fi (Expo Go)**
+1. **Install Expo Go**: Download the app from the [Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) or [Apple App Store](https://apps.apple.com/us/app/expo-go/id982107779).
+2. **Scan QR Code**: Run `npm run android`, then scan the terminal's QR code using the Expo Go app (Android) or Camera app (iOS).
+3. **Connectivity**: Ensure both devices are on the same Wi-Fi network.
+
+**Option B: Via USB Cable (Android)**
+1. **Enable USB Debugging**: Enable **Developer Options** on your phone (tap Build Number 7 times) and turn on **USB Debugging**.
+2. **Connect**: Plug your phone into your computer via USB.
+3. **Verify**: Ensure your device appears when running `adb devices` in your terminal.
+4. **Run**: Execute `npm run android`; the app will automatically install and open on your device.
+
+
+
 ---
 
 ## 📦 Building for Production
