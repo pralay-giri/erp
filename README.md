@@ -118,6 +118,27 @@ npm run build:android
 *Note: This requires a configured Android environment (local SDK or EAS Build).*
 
 
+---
+
+## 🎨 Branding & Assets
+
+To update the application's branding (logo and favicon):
+
+1. **Prepare your logo**: Create a high-resolution PNG image (ideally 1024x1024 pixels).
+2. **Upload the logo**: Place your new image at `frontend/logo/logo.png`.
+3. **Run the update script**:
+   ```bash
+   cd frontend
+   npm run update-assets
+   ```
+4. **Result**: This command automatically generates and replaces all required assets:
+   - `icon.png`: Main app icon.
+   - `adaptive-icon.png`: Android-specific adaptive icon.
+   - `favicon.png`: Browser tab icon.
+   - `splash-icon.png`: Application loading screen.
+
+---
+
 This is a production-ready Node.js/Express backend for a centralized ERP system. It handles a "Golden Path" workflow: CRM Lead → Sales Order → Warehouse Inventory Deduction.
 
 ## 🚀 Getting Started
